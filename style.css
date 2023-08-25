@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.container {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.formText {
+    color: #191919;
+}
+.uderBody
+{
+    background-color: #2eb072;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+.h-100
+{
+    height: 100%;
+}
+form {
+    transition: all .5s;
+    width: 400px;
+    padding-bottom: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 30px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+form:hover{
+    -webkit-box-shadow: 10px 10px 0 3px #2e2e2ea8;
+    -moz-box-shadow: 10px 10px 0 3px #2e2e2ea8;
+    box-shadow: 10px 10px 0 3px #2e2e2ea8;
+}
+body {
+    background-color: #2eb072;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.pe10 {
+    padding-right: 10px;
+}
+
+.ps10 {
+    padding-left: 10px;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.inputs  {
+    transition: all .5s;
+    border: none;
+    border-bottom: 1px solid #191919;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.inputs::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.inputs:focus-visible {
+    outline: none;
+    border-bottom: 1px solid #191919;
+}
+
+label {
+    transition: all .7s;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+.inputs:focus{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.inputs:hover{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+label:hover + .inputs {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.mx-auto
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+.subButton
+{
+    background-color: #3adc8f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px 50px;
+    border: none;
+}
+.butonOut
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
