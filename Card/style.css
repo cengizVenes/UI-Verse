@@ -1,0 +1,356 @@
+p {
+    margin: 0;
+    display: inline-block;
+    font-family: Inter, sans-serif;
+}
+
+.flex_colmn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex_row {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    height: 50mm;
+    width: 84mm;
+    position: relative;
+    perspective: 800px;
+}
+
+.card__side {
+    width: 100%;
+    height: 100%;
+    border-radius: 3.18mm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform 0.7s ease-out;
+    cursor: pointer;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.card__side__photo {
+    width: 1.4cm;
+    height: 1.4cm;
+    position: absolute;
+    left: 12px;
+    bottom: 15px;
+    background: grey;
+    border-radius: 8%;
+}
+
+.ml-100px {
+    margin-left: 100px;
+}
+
+.chipsarrow {
+    margin-left: 10px;
+    height: 13px;
+    width: 10px;
+    filter: grayscale(100%) invert(100%);
+
+}
+
+.d-inlineblock {
+    display: inline-block;
+}
+
+.filterImage {
+    filter: grayscale(100%) invert(100%);
+}
+
+.card__side_front {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, #eb3737 100%);
+    transform: rotateY(0deg);
+    transition: .5s;
+}
+
+.card__side_front:hover {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, #eb3737 0%);
+}
+
+.card__side_back {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, #eb3737 100%);
+    transition: .5s;
+    transform: rotateY(-180deg);
+    color: #eeeeee;
+}
+
+.card__side_back:hover {
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, #eb3737 0%);
+}
+
+.w-10 {
+    width: 10px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.p-25 {
+    padding: 5px;
+}
+.ms--4
+{
+    margin-left:-4px;
+}
+.p-2-5 {
+    padding: 2px 5px;
+}
+
+.card__side__name-bank {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    position: relative;
+    font-size: 22px;
+    margin-left: 8px;
+    color: white;
+    margin-top: 10px;
+}
+
+.ml-25 {
+    margin-left: -15px;
+}
+
+.w-40 {
+    margin-left:5px ;
+    width: 25%;
+    height: 25%;
+}
+
+.card__side__chip {
+    display: flex;
+    align-items: center;
+    width: 1.3cm;
+    height: 1cm;
+    margin-top: -35px;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+.card__side__chip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 80px;
+    right: 15px;
+    transform: scale(1.3);
+}
+
+.d-block {
+    display: block;
+}
+
+.card__side__name-person-2 {
+    text-transform: uppercase;
+    font-family: Roboto Mono, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 65px;
+    position: relative;
+    display: inline;
+    color: white;
+}
+
+.card__side__name-person-2 span {
+    display: inline-block;
+    width: 20px;
+    font-size: 7px;
+    margin-right: 5px;
+}
+
+.card__side__name-person-1 {
+    text-transform: uppercase;
+    font-family: Roboto Mono, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    position: relative;
+    display: inline;
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 140%;
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+/* .card__side__name-person::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45px;
+    aspect-ratio: 1 / 1;
+    background: red;
+    bottom: -10px;
+    right: 0px;
+    border-radius: 50%;
+  }
+  
+  .card__side__name-person::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45px;
+    aspect-ratio: 1 / 1;
+    background: orange;
+    bottom: -10px;
+    right: 23px;
+    border-radius: 50%;
+  } */
+
+.card__side__black {
+    background: black;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ms-2 {
+    margin-left: 5px;
+}
+
+.justify-content-beetven {
+    justify-content: space-between;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.card__side__number {
+    font-size: 18px;
+    font-family: Roboto Mono, sans-serif;
+    color: #eeeeee;
+    background-color: #eeeeee;
+    padding-bottom: 15px;
+    margin: 60px 0px 15px 10px;
+}
+
+.text-white {
+    color: white;
+}
+
+.card__side__number__front {
+    font-size: 18px;
+    font-family: Roboto Mono, sans-serif;
+    color: #eeeeee;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.my-0 {
+    margin: 0;
+}
+
+.card__side__other-numbers {
+    font-family: Roboto Mono, sans-serif;
+    color: #eeeeee;
+    display: block;
+    margin-left: 10px;
+    font-size: 10px;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.card__side__other-numbers::after {
+    color: #635c77;
+    position: absolute;
+    font-size: 8px;
+    left: 0;
+    bottom: 60px;
+}
+
+.card__side__other-numbers_1::after {
+    content: "Bu kartın T.CZiraat Bankası A.Ş 'ye aittir";
+    color: white;
+}
+
+.card__side__other-numbers_2::after {
+    content: "КОД";
+}
+
+.card__side__other-info {
+    color: #635c77;
+    font-size: 4px;
+    text-align: center;
+    font-family: Roboto Mono, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 38px;
+    backface-visibility: hidden;
+}
+
+.card__side__debit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8cm;
+    height: 1cm;
+    border-radius: 1cm;
+    background: #c0c0c0;
+    position: absolute;
+    right: 12px;
+    bottom: 25px;
+    font-family: Inter;
+    color: #666666;
+}
+
+.card__side__debit::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(166, 163, 163, 0.7);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: 0;
+}
+
+.card:hover .card__side_front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__side_back {
+    transform: rotateY(0deg);
+}
